@@ -299,7 +299,7 @@ To only show logs on debug builds:
 if (BuildConfig.DEBUG) Log.d(TAG, "The value of x is " + x);
 ```
 
-### 2.2.10 Class member ordering
+### 2.2.10 Class member ordering ( optional )
 
 There is no single correct solution for this but using a __logical__ and __consistent__ order will improve code learnability and readability. It is recommendable to use the following order:
 
@@ -529,25 +529,15 @@ public Observable<Location> syncLocations() {
 
 When an XML element doesn't have any contents, you __must__ use self closing tags.
 
-This is good:
+This is good: ( preferring camel case like : textviewProfile )
 
 ```xml
 <TextView
-	android:id="@+id/text_view_profile"
+	android:id="@+id/textviewProfile"
 	android:layout_width="wrap_content"
 	android:layout_height="wrap_content" />
 ```
 
-This is __bad__ :
-
-```xml
-<!-- Don\'t do this! -->
-<TextView
-    android:id="@+id/text_view_profile"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content" >
-</TextView>
-```
 
 
 ### 2.3.2 Resources naming
@@ -561,16 +551,16 @@ IDs should be prefixed with the name of the element in lowercase underscore. For
 
 | Element            | Prefix            |
 | -----------------  | ----------------- |
-| `TextView`           | `text_`             |
-| `ImageView`          | `image_`            |
-| `Button`             | `button_`           |
-| `Menu`               | `menu_`             |
+| `TextView`           | `textProfile`             |
+| `ImageView`          | `imageProfile`            |
+| `Button`             | `buttonProfile`           |
+| `Menu`               | `menuProfile`             |
 
 Image view example:
 
 ```xml
 <ImageView
-    android:id="@+id/image_profile"
+    android:id="@+id/imageProfile"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content" />
 ```
@@ -580,7 +570,7 @@ Menu example:
 ```xml
 <menu>
 	<item
-        android:id="@+id/menu_done"
+        android:id="@+id/menuDone"
         android:title="Done" />
 </menu>
 ```
