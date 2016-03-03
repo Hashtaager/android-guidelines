@@ -81,7 +81,9 @@ Resource files in the values folder should be __plural__, e.g. `strings.xml`, `s
 
 # 2 Code guidelines
 
-## 2.1 Java language rules
+[Android studio Tips & Tricks] http://developer.android.com/tools/studio/index.html
+
+## 2.1 Java language rules 
 
 ### 2.1.1 Don't ignore exceptions
 
@@ -96,6 +98,7 @@ void setServerPort(String value) {
 ```
 
 _While you may think that your code will never encounter this error condition or that it is not important to handle it, ignoring exceptions like above creates mines in your code for someone else to trip over some day. You must handle every Exception in your code in some principled way. The specific handling varies depending on the case._ - ([Android code style guidelines](https://source.android.com/source/code-style.html))
+
 
 See alternatives [here](https://source.android.com/source/code-style.html#dont-ignore-exceptions).
 
@@ -211,6 +214,8 @@ This is __bad__:
 if (condition)
     body();  // bad!
 ```
+
+
 
 ### 2.2.6 Annotations
 
